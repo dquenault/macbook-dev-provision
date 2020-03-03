@@ -1,0 +1,4 @@
+all:
+  hosts:
+    macbook:
+      ansible_connection: local    
