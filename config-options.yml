@@ -54,8 +54,8 @@ downloads:
      name: Spotify
      url: http://https://www.spotify.com/uk/download/mac/
      dest: "{{download_home}}/Downloads/Spotify.zip"
-   suuntolink:
-     name: Suunto Movescount link
+   ipvanish:
+     name: IPVanish
      url: https://www.ipvanish.com/software/osx/IPVanish.dmg
      dest: "{{download_home}}/Downloads/IPVanish.dmg"
 
