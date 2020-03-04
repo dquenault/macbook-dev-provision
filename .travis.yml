@@ -2,4 +2,5 @@ os: osx
 language: bash
 
 script:
-  - ./install.sh
+  - chmod u+x install.sh
+  - . install.sh
