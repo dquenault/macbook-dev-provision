@@ -1,2 +1,5 @@
 - name: Install homebrew taps
   import_tasks: homebrew.yml
+
+- name: Install homebrew casks
+  import_tasks: homebrew-casks.yml

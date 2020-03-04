@@ -1,0 +1,4 @@
+# Install mac apps from config file (available by casks)
+- homebrew_cask:
+    name: "{{ homebrew_cask_mac_apps }}"
+    state: present

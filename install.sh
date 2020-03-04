@@ -17,6 +17,6 @@ pip install ansible
 #pip install ansible
 
 # Run the playbook
-ansible-playbook main.yml -i inventory.yml
+ansible-playbook main.yml
 
 

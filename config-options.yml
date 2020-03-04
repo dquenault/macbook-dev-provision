@@ -1,5 +1,44 @@
+downloads: ~/.ansible-downloads/
+
 homebrew_dev_packages:
+  # - ansible # Installed via Pip during install
   - wget
   - node
   - openssl
   - tmux
+  - pyenv
+  - java
+  - curl
+  - gradle
+  - node
+  - npm
+  - openssl
+  - maven
+  - logstash
+  - wget
+  - terraform
+  - awscli@1
+  - kubernetes-cli
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_mac_apps:
+  - atom
+  - docker
+  - slack
+  - sketch
+  - vagrant
+  - iterm2
+  - postman
+  - virtualbox
+  - virtualbox-extension-pack
+  - visual-studio-code
+  - google-chrome
+  - handbrake
+  - sublime-text
+
+#Mac store apps
+mas_email: ""
+mas_password: ""
+
+mas_installed_apps:
+  - { id: 497799835, name: "Xcode (8.1)" }
