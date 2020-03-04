@@ -1,0 +1,2 @@
+- name: Install homebrew taps
+  import_tasks: homebrew.yml

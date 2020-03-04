@@ -1,0 +1,5 @@
+homebrew_dev_packages:
+  - wget
+  - node
+  - openssl
+  - tmux

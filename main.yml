@@ -1,12 +1,19 @@
 #!/usr/bin/env ansible-playbook
 - hosts: macbook
   connection: local
+  pre_tasks:
+  - name: Load user-provided configuration_variables
+    include_vars: "config-options.yml"
+    no_log: true
+    check_mode: no
+    tags:
+      - always
   tasks:
   - debug:
-      msg: Check we are running in the directory of the script
-    failed_when: not ansible_env.PWD.endswith('/mac-ansible')
-
-- hosts: macbook
-  connection: local
-  roles:
-  - test
+      msg: "Start Provisioning"
+  - import_role:
+      name: common
+  - import_role:
+      name: developer
+  - debug:
+      msg: "Completed Provisioning"
