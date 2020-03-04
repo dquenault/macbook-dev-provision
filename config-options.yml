@@ -2,7 +2,7 @@ downloads: ~/.ansible-downloads/
 
 homebrew_dev_packages:
   # - ansible # Installed via Pip during install
-  - adoptopenjdk8
+  - openjdk
   - wget
   - node
   - openssl
@@ -15,7 +15,6 @@ homebrew_dev_packages:
   - npm
   - openssl
   - maven
-  - logstash
   - wget
   - terraform
   - awscli@1
