@@ -1,6 +1,6 @@
-downloads: ~/.ansible-downloads/
+download_home: ~
 
-homebrew_dev_packages:
+applications:
   # - ansible # Installed via Pip during install
   - openjdk
   - wget
@@ -21,26 +21,42 @@ homebrew_dev_packages:
   - kubernetes-cli
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_mac_apps:
-  - atom
-  - docker
-  - slack
-  - sketch
-  - vagrant
-  - iterm2
-  - postman
-  - virtualbox
-  - virtualbox-extension-pack
-  - visual-studio-code
-  - google-chrome
-  - handbrake
-  - sublime-text
+cask_applications:
+   - atom
+   - docker
+   - slack
+   - sketch
+   - vagrant
+   - iterm2
+   - postman
+   - virtualbox
+   - virtualbox-extension-pack
+   - visual-studio-code
+   - google-chrome
+   - handbrake
+   - sublime-text
 
 #Mac store apps
 mas_email: ""
 mas_password: ""
 
 mas_installed_apps:
-  - { id: 497799835, name: "Xcode (8.1)" }
+  - { id: 497799835, name: "Xcode" }
   - { id: 1278508951, name: "Trello" }
   - { id: 406056744, name: "Evernote" }
+  - { id: 409201541, name: "Pages" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 409203825, name: "Numbers" }
+
+
+downloads:
+   spotify:
+     name: Spotify
+     url: http://https://www.spotify.com/uk/download/mac/
+     dest: "{{download_home}}/Downloads/Spotify.zip"
+   suuntolink:
+     name: Suunto Movescount link
+     url: https://www.ipvanish.com/software/osx/IPVanish.dmg
+     dest: "{{download_home}}/Downloads/IPVanish.dmg"
+
+     

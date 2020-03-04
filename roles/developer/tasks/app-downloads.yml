@@ -1,0 +1,5 @@
+- name: getting downloads 
+  get_url:
+    url: "{{item.value.url}}"
+    dest: "{{item.value.dest}}"
+  with_dict: "{{downloads}}" 

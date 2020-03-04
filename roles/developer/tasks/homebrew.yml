@@ -1,9 +1,10 @@
-# Update homebrew and upgrade all packages
-- homebrew:
-    update_homebrew: yes
-#     upgrade_all: yes
 
-# Install packages list from config file
-- homebrew:
-    name: "{{ homebrew_dev_packages }}"
-    state: present
+- name: Update homebrew and upgrade all packages
+  homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: Install homebrew packages list from config file
+  homebrew:
+    name: "{{applications}}"
+    state: latest

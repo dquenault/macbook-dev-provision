@@ -6,3 +6,6 @@
 
 - name: Install dot files / config
   import_tasks: dotfiles.yml
+
+- name: Get downloads
+  import_tasks: app-downloads.yml
