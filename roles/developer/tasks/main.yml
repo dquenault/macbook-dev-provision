@@ -3,3 +3,6 @@
 
 - name: Install homebrew casks
   import_tasks: homebrew-casks.yml
+
+- name: Install dot files / config
+  import_tasks: dotfiles.yml

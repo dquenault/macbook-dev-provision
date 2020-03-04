@@ -2,6 +2,7 @@ downloads: ~/.ansible-downloads/
 
 homebrew_dev_packages:
   # - ansible # Installed via Pip during install
+  - adoptopenjdk8
   - wget
   - node
   - openssl
@@ -22,7 +23,6 @@ homebrew_dev_packages:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_mac_apps:
-  - adoptopenjdk8
   - atom
   - docker
   - slack

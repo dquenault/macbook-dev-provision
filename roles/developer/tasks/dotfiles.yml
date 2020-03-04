@@ -1,0 +1,4 @@
+- name: Copy the tmux config to home drive to support additional shortcuts
+  template:
+    src: home/user/.tmux.conf
+    dest: "{{ ansible_env.HOME }}/"
