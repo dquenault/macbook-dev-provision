@@ -5,8 +5,6 @@
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew install git
-
 curl https://bootstrap.pypa.io/get-pip.py | python
 pip install ansible
 
@@ -16,6 +14,8 @@ pip install ansible
 #source venv/bin/activate
 #pip install ansible
 
+# Install the pre-reqs for ansible imported roles
+ansible-galaxy install -r requirements.yml
 # Run the playbook
 ansible-playbook main.yml
 

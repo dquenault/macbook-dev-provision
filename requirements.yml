@@ -1,2 +1,2 @@
----
-- name: geerlingguy.mas
+roles:
+  - src: geerlingguy.mas
