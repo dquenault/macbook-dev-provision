@@ -45,6 +45,7 @@ mas_installed_apps:
   - { id: 497799835, name: "Xcode" }
   - { id: 1278508951, name: "Trello" }
   - { id: 406056744, name: "Evernote" }
+  - { id: 404705039, name: "idraw" }
   - { id: 409201541, name: "Pages" }
   - { id: 409183694, name: "Keynote" }
   - { id: 409203825, name: "Numbers" }
@@ -58,5 +59,11 @@ downloads:
      name: IPVanish
      url: https://www.ipvanish.com/software/osx/IPVanish.dmg
      dest: "{{ download_home }}/Downloads/IPVanish.dmg"
-
-     
+   keepassx:
+     name: KeePassX
+     url: https://www.keepassx.org/releases/2.0.3/KeePassX-2.0.3.dmg
+     dest: "{{ download_home }}/Downloads/KeePassX-2.0.3.dmg"
+   androidstudio:
+     name: AndroidStudio
+     url: https://dl.google.com/dl/android/studio/install/3.6.1.0/android-studio-ide-192.6241897-mac.dmg
+     dest: "{{ download_home }}/Downloads/android-studio-ide.dmg"

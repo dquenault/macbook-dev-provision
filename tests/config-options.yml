@@ -15,7 +15,7 @@ homebrew_installed_packages:
   - gradle
 
 homebrew_cask_apps:
-  - chrome
+  - google-chrome
   - atom
 
 downloads:
