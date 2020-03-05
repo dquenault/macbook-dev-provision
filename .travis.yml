@@ -36,5 +36,5 @@ script:
 
 # Test the playbook's idempotence.
 - idempotence=$(mktemp)
- - ansible-playbook main.yml | tee -a ${idempotence}
- - tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
+- ansible-playbook main.yml | tee -a ${idempotence}
+ #- tail ${idempotence} | grep -q 'changed=0.*failed=0' && (echo 'Idempotence test: pass' && exit 0) || (echo 'Idempotence test: fail' && exit 1)
