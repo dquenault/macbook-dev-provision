@@ -22,9 +22,6 @@ install:
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
 
 script:
-- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" > /dev/null 2>&1
-
-
 # Install the pre-reqs for ansible imported roles
 - ansible-galaxy install -r requirements.yml
 
