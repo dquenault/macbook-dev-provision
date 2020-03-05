@@ -1,6 +1,11 @@
 download_home: ~
 
-applications:
+homebrew_upgrade_all_packages: no
+
+homebrew_taps:
+  - homebrew/core
+
+homebrew_installed_packages:
   # - ansible # Installed via Pip during install
   - openjdk
   - wget
@@ -21,7 +26,7 @@ applications:
   - kubernetes-cli
 
 homebrew_cask_appdir: /Applications
-cask_applications:
+homebrew_cask_apps:
    - atom
    - docker
    - slack

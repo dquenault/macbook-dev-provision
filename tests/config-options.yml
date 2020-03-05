@@ -1,0 +1,26 @@
+# This is the config file for the CI process to test the install
+download_home: ~
+
+homebrew_taps:
+  - homebrew/core
+
+homebrew_installed_packages:
+  - wget
+  - node
+  - openssl
+  - tmux
+  - pyenv
+  - java
+  - curl
+  - gradle
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - chrome
+  - atom
+
+  downloads:
+   spotify:
+     name: Spotify
+     url: http://https://www.spotify.com/uk/download/mac/
+     dest: "{{download_home}}/Downloads/Spotify.zip"

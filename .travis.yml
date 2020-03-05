@@ -1,7 +1,38 @@
 language: objective-c
 # 10.13 (see https://docs.travis-ci.com/user/osx-ci-environment/#OS-X-Version)
 osx_image: xcode9.3
-script:
-- chmod u+x install.sh
-- ". install.sh"
 
+install:
+  # Install pip.
+  - sudo easy_install pip
+
+  # Install Ansible.
+  - sudo pip install ansible
+
+  # Add ansible.cfg to pick up roles path.
+  - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
+
+script:
+- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" > /dev/null 2>&1
+
+
+# Install the pre-reqs for ansible imported roles
+- ansible-galaxy install -r requirements.yml
+
+# Check the role/playbook's syntax.
+- ansible-playbook main.yml --syntax-check
+
+# Copy test config.yml into place.
+- cp tests/config-options.yml config-options.yml
+
+ # Test the playbook.
+  - "travis_wait 30 ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml"
+
+  # Test the playbook's idempotence.
+  - idempotence=$(mktemp)
+  - "ansible-playbook --extra-vars '{\"configure_sudoers\":\"false\"}' main.yml | tee -a ${idempotence}"
+  - >
+    tail ${idempotence}
+    | grep -q 'changed=0.*failed=0'
+    && (echo 'Idempotence test: pass' && exit 0)
+    || (echo 'Idempotence test: fail' && exit 1)
