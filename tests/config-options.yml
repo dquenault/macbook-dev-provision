@@ -1,5 +1,5 @@
 # This is the config file for the CI process to test the install
-download_home: ~
+download_home: "~"
 
 homebrew_taps:
   - homebrew/core
@@ -19,7 +19,7 @@ homebrew_cask_apps:
   - atom
 
   downloads:
-   spotify:
-     name: Spotify
-     url: http://https://www.spotify.com/uk/download/mac/
-     dest: "{{download_home}}/Downloads/Spotify.zip"
+   ipvanish:
+     name: IPVanish
+     url: https://www.ipvanish.com/software/osx/IPVanish.dmg
+     dest: "{{ download_home }}/Downloads/IPVanish.dmg"

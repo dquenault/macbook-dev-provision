@@ -1,4 +1,4 @@
-download_home: ~
+download_home: "~"
 
 homebrew_upgrade_all_packages: yes
 
@@ -53,11 +53,11 @@ mas_installed_apps:
 downloads:
    spotify:
      name: Spotify
-     url: http://https://www.spotify.com/uk/download/mac/
-     dest: "{{download_home}}/Downloads/Spotify.zip"
+     url: http://download.spotify.com/Spotify.dmg
+     dest: "{{ download_home }}/Downloads/Spotify.dmg"
    ipvanish:
      name: IPVanish
      url: https://www.ipvanish.com/software/osx/IPVanish.dmg
-     dest: "{{download_home}}/Downloads/IPVanish.dmg"
+     dest: "{{ download_home }}/Downloads/IPVanish.dmg"
 
      
