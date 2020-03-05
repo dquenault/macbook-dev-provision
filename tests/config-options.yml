@@ -14,7 +14,6 @@ homebrew_installed_packages:
   - curl
   - gradle
 
-homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chrome
   - atom
