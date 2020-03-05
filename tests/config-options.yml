@@ -18,6 +18,11 @@ homebrew_cask_apps:
   - google-chrome
   - atom
 
+mas_email: "{{ lookup('env','MAS_EMAIL') }}"
+mas_password: "{{ lookup('env','MAS_PASSWORD') }}"
+
+mas_installed_apps: []
+
 downloads:
   ipvanish:
     name: IPVanish
