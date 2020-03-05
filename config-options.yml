@@ -67,3 +67,19 @@ downloads:
      name: AndroidStudio
      url: https://dl.google.com/dl/android/studio/install/3.6.1.0/android-studio-ide-192.6241897-mac.dmg
      dest: "{{ download_home }}/Downloads/android-studio-ide.dmg"
+   gimp:
+     name: Gimp
+     url: https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.14-x86_64-1.dmg
+     dest: "{{ download_home }}/Downloads/gimp.dmg"
+   gcloud:
+     name: gcloud
+     url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-283.0.0-darwin-x86_64.tar.gz
+     dest: "{{ download_home }}/Downloads/gcloud.dmg"
+   intellij:
+     name: intellij
+     url: https://download.jetbrains.com/idea/ideaIC-2019.3.3.dmg?_ga=2.241909057.2111314333.1583443722-1334880327.1568320544
+     dest: "{{ download_home }}/Downloads/intellij-ce.dmg"
+   pycharm:
+     name: pycharm
+     url: https://download.jetbrains.com/python/pycharm-community-2019.3.3.dmg?_ga=2.241909057.2111314333.1583443722-1334880327.1568320544
+     dest: "{{ download_home }}/Downloads/pycharm.dmg"

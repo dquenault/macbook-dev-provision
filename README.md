@@ -14,7 +14,6 @@ This will install python (and it's package manager pip), and then install ansibl
 Obviously, you will also need git installed to clone this repo in the first place!
 
 ### Outstanding items
-- clean up code base. Two old yaml files seem to be cached in memory, not quite sure why removing them breaks ansible (fix another day!)
 - add additional configs (dotfiles)
 - chrome extensions for macosx
 - atom extensions for macosx

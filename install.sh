@@ -8,5 +8,3 @@ pip install ansible
 ansible-galaxy install -r requirements.yml
 # Run the playbook
 ansible-playbook main.yml
-
-
