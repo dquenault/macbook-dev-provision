@@ -1,5 +1,6 @@
-os: osx
-language: bash
+language: objective-c
+# 10.13 (see https://docs.travis-ci.com/user/osx-ci-environment/#OS-X-Version)
+osx_image: xcode9.3
 script:
 - chmod u+x install.sh
 - ". install.sh"
