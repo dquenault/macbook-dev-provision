@@ -9,6 +9,8 @@
     tags:
       - always
   tasks:
+  - debug: msg="{{ lookup('env','mas_email') }} is an environment variable"
+
   - debug:
       msg: "Start Provisioning"
   - import_role:
