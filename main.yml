@@ -9,8 +9,6 @@
     tags:
       - always
   tasks:
-  - debug: msg="{{ lookup('env','MAS_EMAIL') }} should be secure"
-  - debug: msg="{{ lookup('env','MAS_PASSWORD') }} should be secure"
   - debug:
       msg: "Start Provisioning"
   - import_role:
