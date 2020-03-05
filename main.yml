@@ -14,8 +14,8 @@
   - import_role:
       name: common
   - import_role:
-      name: developer
-  - import_role:
       name: geerlingguy.mas
+  - import_role:
+      name: developer
   - debug:
       msg: "Completed Provisioning"
