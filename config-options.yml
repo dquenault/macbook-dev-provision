@@ -37,8 +37,8 @@ cask_applications:
    - sublime-text
 
 #Mac store apps
-mas_email: "{{ lookup('env','mas_email') }}"
-mas_password: "{{ lookup('env','mas_password') }}"
+mas_email: "{{ lookup('env','MAS_EMAIL') }}"
+mas_password: "{{ lookup('env','MAS_PASSWORD') }}"
 
 mas_installed_apps:
   - { id: 497799835, name: "Xcode" }
