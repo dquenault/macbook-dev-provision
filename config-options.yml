@@ -49,7 +49,6 @@ mas_installed_apps:
   - { id: 409183694, name: "Keynote" }
   - { id: 409203825, name: "Numbers" }
 
-
 downloads:
    spotify:
      name: Spotify

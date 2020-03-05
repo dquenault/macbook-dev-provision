@@ -18,8 +18,8 @@ homebrew_cask_apps:
   - chrome
   - atom
 
-  downloads:
-   ipvanish:
-     name: IPVanish
-     url: https://www.ipvanish.com/software/osx/IPVanish.dmg
-     dest: "{{ download_home }}/Downloads/IPVanish.dmg"
+downloads:
+  ipvanish:
+    name: IPVanish
+    url: https://www.ipvanish.com/software/osx/IPVanish.dmg
+    dest: "{{ download_home }}/Downloads/IPVanish.dmg"
