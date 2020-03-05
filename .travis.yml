@@ -1,6 +1,8 @@
 os: osx
 language: bash
-
 script:
-  - chmod u+x install.sh
-  - . install.sh
+- chmod u+x install.sh
+- ". install.sh"
+env:
+  global:
+    secure: YE8vKi5FCvnK3z2gQgE7v2PNwu4hzVh7diXJ/bbcOsjTqjxFTzULnelHJC6+QHYz4onSrPKbvcaG03ZGcHVb4D5dDqDxRgIdc4dzlYrWKS0uOSHcBemFy8wfNUz+i1+gFwqjxWCFc/1fCZ/kDqUIuZJSzB+dJlohduN/UYCydZuIbV5939dgxB2jeWoXfkaVN36bOkBmPNjBljEd4EKlhtgg36v5uBo8d2nRcJjyy5+2PaGkseVHzkjUd+jZz2ihiVK9c+KAbwGcbKsa3jUsPLSHYLZwnSZw1+kDjPVhODMMD1twUtB0XsmP0leEcRabEaMhXrzLk1gp0FeANwFXIvpVP8T+QT2ZAE0mF6p+yrGW2ZJJwSbxFfdPSTJYgo4/8+Jre90jlel8ym1/HzUq3Ubtu8LFUq+1MjbHlLf+5ySDP3gUZsWdx8cZvWm2zfKZbPMiRy1icejZCZH2NhdYVV0AzFbo2Vwzu1Q2vI2qVB9EPtf31Mf5JX+3uE0qY2bIZuoQygpeSYKUC/aXL4xUoQ9vcgaYOz/zgffUjz6RrW+0y7Cc9trrPePhj2EY8quTQkfmOcDghUOiAPT4zuNWra5LCxT2wqzrsdY7ANKaNR5Er0OWuldGSPmERSiLTYC8X3xMv1BYIGao1TL4XjXIhozndzcAPxKFho4o2AY84vQ=
